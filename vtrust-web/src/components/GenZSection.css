@@ -1,0 +1,73 @@
+.genz-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.genz-title {
+  font-size: 3rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.genz-subtitle {
+  flex: 1;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  padding-left: 40px;
+  font-weight: 500;
+}
+
+.genz-cards {
+  align-items: stretch;
+}
+
+.genz-card {
+  flex: 1;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.genz-card.right-card {
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.top-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.bottom-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 40px;
+  line-height: 1.2;
+}
+
+@media (max-width: 992px) {
+  .genz-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .genz-subtitle {
+    padding-left: 0;
+  }
+  .genz-cards {
+    flex-direction: column;
+  }
+}

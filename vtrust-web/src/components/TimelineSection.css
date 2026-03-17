@@ -1,0 +1,75 @@
+.timeline-section {
+  background-color: var(--bg-darker);
+  border-radius: 40px 40px 0 0;
+  margin-top: 40px;
+}
+
+.timeline-title {
+  font-size: 2.5rem;
+}
+
+.tabs {
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 1px solid var(--text-dark);
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.tab-btn.active, .tab-btn:hover {
+  background-color: var(--primary-yellow);
+  border-color: var(--primary-yellow);
+  color: #fff;
+}
+
+.timeline-cards {
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.timeline-card {
+  min-width: 300px;
+  flex: 1;
+  border-radius: 20px;
+  justify-content: space-between;
+  padding: 30px;
+  min-height: 350px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.timeline-year {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.timeline-year .line {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: var(--text-dark);
+}
+
+.timeline-content {
+  margin-top: auto;
+}
+
+.timeline-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.timeline-content p {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
