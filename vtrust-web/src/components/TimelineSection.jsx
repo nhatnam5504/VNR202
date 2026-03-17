@@ -12,11 +12,11 @@ const TimelineSection = () => {
   return (
     <section ref={revealRef} className={`timeline-section reveal ${isVisible ? 'is-visible' : ''}`} id="thuonghieu">
       <div className="container py-20">
-        <h2 className="timeline-title text-center font-serif mb-8">
+        <h2 className="timeline-title text-center font-serif mb-12">
           <span className="text-red">TỰ HÀO LOCAL BRAND:</span> NHỮNG BƯỚC CHÂN TỰ CHỦ
         </h2>
 
-        <div className="tabs flex justify-center gap-4 mb-10">
+        <div className="tabs flex justify-center gap-4 mb-16">
           <button className={`tab-btn ${activeTab === 'chung' ? 'active' : ''}`} onClick={() => setActiveTab('chung')}>MỤC TIÊU CHUNG</button>
           <button className={`tab-btn ${activeTab === 'vinfast' ? 'active' : ''}`} onClick={() => setActiveTab('vinfast')}>VINFAST</button>
           <button className={`tab-btn ${activeTab === 'bitis' ? 'active' : ''}`} onClick={() => setActiveTab('bitis')}>BITI'S HUNTER</button>

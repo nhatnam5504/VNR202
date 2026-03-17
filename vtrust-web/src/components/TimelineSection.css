@@ -47,16 +47,17 @@
 .timeline-year {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  font-size: 1.1rem;
+  gap: 15px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--primary-red);
 }
 
 .timeline-year .line {
   display: inline-block;
-  width: 40px;
-  height: 2px;
-  background-color: var(--text-dark);
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-red);
 }
 
 .timeline-content {
@@ -64,12 +65,15 @@
 }
 
 .timeline-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
   text-transform: uppercase;
+  color: var(--text-dark);
 }
 
 .timeline-content p {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 500;
+  line-height: 1.7;
+  color: var(--text-dark);
 }
