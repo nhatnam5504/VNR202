@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer py-10">
       <div className="container">
-        <div className="footer-top card-yellow text-center flex-col items-center justify-center">
+        <div className="footer-top card-yellow text-center flex flex-col items-center justify-center">
           <h2 className="footer-title font-serif text-red mb-4">V-TRUST</h2>
           <p className="footer-desc">
             Dự án PBL (Project-Based Learning) môn Lịch sử Đảng Cộng sản Việt Nam (VNR202).<br/>

@@ -25,7 +25,7 @@ const PollSection = () => {
         </p>
       </div>
 
-      <div className="poll-card bg-gray flex-col items-center">
+      <div className="poll-card bg-gray flex flex-col items-center">
         <h3 className="poll-question text-center mb-8">
           Thương hiệu nào dưới đây khiến bạn tự hào nhất về năng lực 'Đổi mới' và tinh thần tự chủ của kinh tế Việt Nam?
         </h3>
