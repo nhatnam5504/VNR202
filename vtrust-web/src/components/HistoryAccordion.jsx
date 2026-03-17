@@ -8,20 +8,20 @@ const HistoryAccordion = () => {
 
   const accordionData = [
     {
-      year: "Năm 1986 – Khởi nguồn \"Đổi Mới\"",
-      content: "Đại hội đại biểu toàn quốc lần thứ VI\nNội dung: Đảng khởi xướng đường lối Đổi mới toàn diện, chuyển từ kinh tế bao cấp sang nền kinh tế hàng hóa nhiều thành phần. Quyết sách lịch sử này đã cởi trói cho lực lượng sản xuất, mở đường cho sự ra đời và trỗi dậy mạnh mẽ của các doanh nghiệp tư nhân Việt Nam sau này."
+      year: "Năm 1986 — Khởi nguồn \"Đổi mới\"",
+      content: "Đại hội VI của Đảng Cộng sản Việt Nam đánh dấu bước ngoặt lịch sử khi khởi xướng công cuộc Đổi mới toàn diện. Từ đây, nền kinh tế từng bước chuyển từ cơ chế bao cấp sang vận hành theo cơ chế thị trường định hướng xã hội chủ nghĩa. Sự thay đổi này mở ra điều kiện để doanh nghiệp được chủ động hơn, năng động hơn, đồng thời buộc phải cạnh tranh và thích ứng với thị trường."
     },
     {
-      year: "Năm 2009 – Đánh thức \"Niềm tin\"",
-      content: "Bộ Chính trị chính thức phát động cuộc vận động \"Người Việt Nam ưu tiên dùng hàng Việt Nam\". Đây là cột mốc quan trọng khơi dậy niềm tự hào dân tộc trong tiêu dùng."
+      year: "Năm 2009 — Đánh thức \"Niềm tin\"",
+      content: "Cuộc vận động “Người Việt Nam ưu tiên dùng hàng Việt Nam” không chỉ khuyến khích tiêu dùng nội địa, mà còn góp phần thay đổi nhận thức xã hội về chất lượng và vị trí của hàng Việt. Trong bối cảnh thương hiệu ngoại chiếm ưu thế mạnh mẽ, đây là một cú hích quan trọng để doanh nghiệp Việt mạnh dạn đầu tư hơn vào sản phẩm, thương hiệu và niềm tin người dùng."
     },
     {
-      year: "Năm 2021 – Khát vọng \"Vươn tầm\"",
-      content: "Đại hội đại biểu toàn quốc lần thứ XIII định hướng mục tiêu đưa Việt Nam trở thành nước phát triển, thu nhập cao vào năm 2045. Các doanh nghiệp Việt đứng trước sứ mệnh tiên phong chuyển đổi số và phát triển bền vững."
+      year: "Năm 2021 — Khát vọng \"Vươn tầm\"",
+      content: "Khi kinh tế số, thương mại điện tử và cạnh tranh toàn cầu phát triển mạnh, doanh nghiệp Việt không còn chỉ đứng trước câu hỏi “làm ra sản phẩm gì”, mà phải trả lời “làm sao để đủ sức cạnh tranh và có bản sắc riêng”. Đây là giai đoạn nhiều Local Brand chuyển mình mạnh mẽ, đầu tư cho hình ảnh, công nghệ, vận hành và chiến lược khách hàng."
     },
     {
-      year: "Năm 2026 – Hiện tại và tầm nhìn",
-      content: "Chặng đường tiếp theo của thế hệ Gen Z, tiếp bước cha anh, vững vàng trên đà phát triển nền kinh tế số."
+      year: "Hiện tại — Tự chủ và hội nhập",
+      content: "Ngày nay, sự phát triển của Local Brand là minh chứng cho một xu hướng rõ rệt: doanh nghiệp Việt đang từng bước vừa làm chủ thị trường nội địa, vừa học cách vươn ra bên ngoài. Từ một nền kinh tế thiếu thốn, Việt Nam đã tạo dựng được lớp doanh nghiệp có năng lực cạnh tranh ngày càng rõ hơn. Đó chính là kết quả cụ thể của quá trình Đổi mới trong thực tiễn."
     }
   ];
 
@@ -39,7 +39,7 @@ const HistoryAccordion = () => {
             THỰC TIỄN
           </h2>
           <p className="history-desc">
-            Sức sống của hàng Việt không tự nhiên mà có, nó được ươm mầm từ những quyết sách mang tính bước ngoặt.
+            Sự lớn lên của các thương hiệu Việt không diễn ra trong khoảng trống. Đằng sau mỗi bước tiến của doanh nghiệp là một bối cảnh chính sách, một môi trường kinh tế và một quá trình chuyển biến tư duy kéo dài nhiều thập niên.
           </p>
         </div>
 
