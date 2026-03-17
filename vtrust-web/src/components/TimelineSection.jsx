@@ -130,16 +130,16 @@ const TimelineSection = () => {
               </div>
             )}
 
-            {data.resolution && (
-              <div className="resolution-box mb-8 p-6" style={{ borderLeft: '4px solid var(--primary-red)', paddingLeft: '20px' }}>
-                <h4 className="text-red font-serif mb-2" style={{ fontSize: '1.2rem' }}>Liên kết Nghị quyết:</h4>
-                <p style={{ fontStyle: 'italic' }}>{data.resolution}</p>
-              </div>
-            )}
-
             {data.insight && (
               <div className="insight-box text-center mt-10" style={{ backgroundColor: 'var(--primary-yellow)', padding: '20px', borderRadius: '50px', fontWeight: 'bold' }}>
                 <span className="text-red">Insight for Gen Z:</span> {data.insight}
+              </div>
+            )}
+
+            {data.resolution && (
+              <div className={`key-insight ${isVisible ? 'is-visible' : ''}`} style={{ marginTop: '30px' }}>
+                <span className="ki-label">⚡ Liên kết Nghị quyết</span>
+                {data.resolution}
               </div>
             )}
           </div>

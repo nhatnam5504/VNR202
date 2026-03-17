@@ -75,3 +75,38 @@
     gap: 40px;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-top {
+    padding: 40px 24px;
+  }
+  .footer-title {
+    font-size: 2.5rem;
+  }
+  .footer-desc {
+    font-size: 1rem;
+  }
+  .footer-bottom {
+    margin-top: 40px;
+  }
+  .footer-team h3, .footer-refs h3 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+  .footer-desc {
+    font-size: 0.9rem;
+  }
+  .ref-list li {
+    font-size: 0.88rem;
+  }
+  .team-member {
+    font-size: 0.9rem;
+  }
+}

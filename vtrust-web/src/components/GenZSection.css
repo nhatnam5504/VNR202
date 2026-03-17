@@ -71,3 +71,47 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  .genz-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .genz-title {
+    font-size: 2.2rem;
+  }
+  .genz-card {
+    padding: 28px;
+  }
+  .card-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .bottom-title {
+    font-size: 2rem;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .genz-title {
+    font-size: 1.8rem;
+  }
+  .genz-subtitle {
+    font-size: 0.95rem;
+  }
+  .genz-card {
+    padding: 20px;
+    border-radius: 14px;
+  }
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+  }
+  .card-content p, .top-text {
+    font-size: 0.9rem;
+  }
+  .bottom-title {
+    font-size: 1.5rem;
+  }
+}

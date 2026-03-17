@@ -62,3 +62,37 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .poll-title {
+    font-size: 2rem;
+  }
+  .poll-card {
+    padding: 40px 24px;
+    border-radius: 20px;
+  }
+  .poll-question {
+    font-size: 1.2rem;
+  }
+  .poll-btn {
+    padding: 16px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .poll-title {
+    font-size: 1.6rem;
+  }
+  .poll-subtitle {
+    font-size: 0.95rem;
+  }
+  .poll-card {
+    padding: 28px 16px;
+    border-radius: 16px;
+    margin-top: 24px;
+  }
+  .poll-question {
+    font-size: 1.05rem;
+  }
+}

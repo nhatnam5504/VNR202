@@ -10,6 +10,11 @@ const GenZSection = () => {
 
   return (
     <section ref={revealRef} className={`genz-section container py-20 reveal ${isVisible ? 'is-visible' : ''}`}>
+
+      <p className="section-tldr">
+        Gen Z không từ chối hàng Việt — họ chỉ cần <span className="highlight-word">chất lượng thật</span>.
+      </p>
+
       <div className="genz-header flex justify-between items-center mb-8">
         <h2 className="genz-title font-serif">
           <span className="text-red">GEN Z</span> ĐANG TIÊU DÙNG<br/> THẾ NÀO?
@@ -43,6 +48,12 @@ const GenZSection = () => {
           <h3 className="bottom-title font-serif">" CƠN LỐC "<br/> SÀN THƯƠNG MẠI</h3>
         </div>
       </div>
+
+      <div className={`key-insight yellow-accent ${isVisible ? 'is-visible' : ''}`}>
+        <span className="ki-label">⭐ Insight cho Doanh nghiệp Việt</span>
+        Đổi mới không chỉ là tâm lý — đó là điều kiện tồn tại. Local Brand nào thấu hiểu Gen Z, đổi mới sản phẩm và kể câu chuyện đúvng cách — thương hiệu ấy có thể thắng trên chính sân nhà.
+      </div>
+
     </section>
   );
 };

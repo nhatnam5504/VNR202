@@ -25,10 +25,10 @@ const Hero = () => {
         </p>
         
         <div className="hero-actions flex items-center gap-8 mt-8">
-          <button className="btn btn-yellow">
+          <button className="btn btn-yellow" onClick={() => document.getElementById('thuonghieu')?.scrollIntoView({ behavior: 'smooth' })}>
             Khám phá câu chuyện ↓
           </button>
-          <a href="#casestudy" className="case-study-link text-yellow">View Case Study</a>
+          <a href="#thuonghieu" className="case-study-link text-yellow">Xem Case Study →</a>
         </div>
 
         <div className="hero-brands mt-8">
@@ -43,19 +43,30 @@ const Hero = () => {
 
       <div className="hero-stats flex-col gap-4">
         <div ref={tilt1.ref} onMouseMove={tilt1.onMouseMove} onMouseLeave={tilt1.onMouseLeave}
-          className="stat-card card-yellow hover-scale tilt-card animate-pulse-yellow reveal-child stagger-1">
-          <h3 className="stat-number"><CountUp end={35} /> <span>năm</span></h3>
-          <p>Đổi mới, từ một nền kinh tế bao cấp dần chuyển sang vận hành theo cơ chế thị trường định hướng xã hội chủ nghĩa, <span className="hl-bg-yellow">mở ra không gian phát triển mới</span> cho doanh nghiệp Việt.</p>
+          className="stat-card card-yellow hover-scale tilt-card animate-pulse-yellow reveal-child stagger-1"
+          data-bg="35">
+          <div className="stat-big-num"><CountUp end={35} /></div>
+          <div className="stat-label-row">
+            <span className="stat-label-unit">NĂM</span>
+            <span className="stat-label-tag">ĐỔI MỚI</span>
+          </div>
+          <p>Từ Đại hội VI (1986) — nền kinh tế bao cấp chuyển sang <span className="hl-bg-yellow">kinh tế thị trường</span>, mở không gian sáng tạo cho doanh nghiệp Việt.</p>
           <div className="stat-line"></div>
         </div>
         <div ref={tilt2.ref} onMouseMove={tilt2.onMouseMove} onMouseLeave={tilt2.onMouseLeave}
-          className="stat-card card-yellow top-right hover-scale tilt-card animate-pulse-yellow reveal-child stagger-2">
-          <h3 className="stat-number">năm <span><CountUp end={2009} /></span></h3>
-          <p>Bộ Chính trị triển khai cuộc vận động <span className="hl-red">"Người Việt Nam ưu tiên dùng hàng Việt Nam"</span>, góp phần nâng cao nhận thức tiêu dùng và khơi dậy niềm tin vào năng lực sản xuất trong nước.</p>
+          className="stat-card card-yellow top-right hover-scale tilt-card animate-pulse-yellow reveal-child stagger-2"
+          data-bg="09">
+          <div className="stat-big-num" style={{ fontSize: '3.8rem', letterSpacing: '-2px' }}>20<span className="stat-big-accent">09</span></div>
+          <div className="stat-label-row">
+            <span className="stat-label-unit">NĂM</span>
+            <span className="stat-label-tag">CHIẾN LƯỢC</span>
+          </div>
+          <p>Bộ Chính trị phát động <span className="hl-red">"Người Việt Nam ưu tiên dùng hàng Việt Nam"</span> — tiếp thêm niềm tin cho Local Brand.</p>
           <div className="stat-line"></div>
         </div>
         <div ref={tilt3.ref} onMouseMove={tilt3.onMouseMove} onMouseLeave={tilt3.onMouseLeave}
-          className="stat-card card-yellow full-width flex justify-between hover-scale tilt-card reveal-child stagger-3">
+          className="stat-card card-yellow full-width flex justify-between hover-scale tilt-card reveal-child stagger-3"
+          data-bg="→">
           <div className="stat-text-left">
             <h3 className="stat-title">BƯỚC NHẢY VỌT</h3>
             <p>Từ chỗ chủ yếu gia công, bị lép vế trước hàng ngoại, nhiều thương hiệu Việt hôm nay đã biết xây dựng bản sắc, đổi mới mô hình kinh doanh, làm chủ truyền thông và từng bước vươn ra thị trường rộng lớn hơn.</p>

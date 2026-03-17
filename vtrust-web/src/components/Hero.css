@@ -62,25 +62,107 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Giant ghost number behind every stat card */
+.stat-card::before {
+  content: attr(data-bg);
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  font-size: 9rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.07);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -4px;
+  z-index: 0;
+}
+
+.stat-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Big display number — the dominant hero stat */
+.stat-big-num {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -4px;
+  color: transparent;
+  -webkit-text-stroke: 3px var(--primary-red);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.stat-big-accent {
+  color: var(--primary-red);
+  -webkit-text-stroke: 0;
+}
+
+.stat-label-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.stat-label-unit {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--primary-red);
+  text-transform: uppercase;
+  border-right: 2px solid var(--primary-red);
+  padding-right: 8px;
+}
+
+.stat-label-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgba(0,0,0,0.5);
+  text-transform: uppercase;
 }
 
 .stat-number {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--primary-red);
+  font-size: 7rem;
+  font-weight: 900;
   line-height: 1;
   margin-bottom: 10px;
+  letter-spacing: -3px;
+  color: transparent;
+  -webkit-text-stroke: 3px var(--primary-red);
+  text-stroke: 3px var(--primary-red);
+  position: relative;
+  display: inline-block;
+}
+
+.stat-number .filled {
+  color: var(--primary-red);
+  -webkit-text-stroke: 0;
+  text-stroke: 0;
 }
 
 .stat-number span {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
   color: var(--text-dark);
+  -webkit-text-stroke: 0;
+  text-stroke: 0;
+  letter-spacing: 0;
+  margin-left: 6px;
+  vertical-align: middle;
 }
 
 .stat-card p {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  line-height: 1.5;
 }
 
 .stat-line {
@@ -132,5 +214,56 @@
 @media (max-width: 992px) {
   .hero {
     flex-direction: column;
+  }
+  .hero-stats {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  .hero-desc {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .stat-card.full-width {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .stat-chart {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  .hero-brands {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+  .stat-card.full-width {
+    grid-column: span 1;
+  }
+  .stat-number {
+    font-size: 2.2rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
 }

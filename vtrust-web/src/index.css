@@ -23,6 +23,7 @@ body {
   color: var(--text-dark);
   background-color: var(--bg-light);
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -97,13 +98,13 @@ h6 {
 
 /* Spacing */
 .py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .mb-4 {
@@ -115,11 +116,11 @@ h6 {
 }
 
 .mb-12 {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .mb-16 {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .mt-8 {
@@ -143,10 +144,13 @@ h6 {
 .btn-yellow {
   background-color: var(--primary-yellow);
   color: #fff;
+  box-shadow: 0 4px 15px rgba(241, 179, 41, 0.4);
 }
 
 .btn-yellow:hover {
   background-color: #e0a220;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(241, 179, 41, 0.5);
 }
 
 /* Section Backgrounds */
@@ -206,6 +210,66 @@ h6 {
 
 .hover-float:hover {
   transform: translateY(-8px);
+}
+
+/* ====================================================
+   GLOBAL RESPONSIVE — Applies to all devices
+   ==================================================== */
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 24px;
+  }
+  .py-20 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  .py-20 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .py-10 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .mb-16 {
+    margin-bottom: 2.5rem;
+  }
+  .mb-12 {
+    margin-bottom: 2rem;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  h1 { font-size: clamp(1.8rem, 5vw, 3.5rem); }
+  h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+  h3 { font-size: clamp(1.2rem, 3vw, 2rem); }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+  .gap-6 {
+    gap: 1rem;
+  }
+  .gap-8 {
+    gap: 1.5rem;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .card-yellow {
+    padding: 18px;
+    border-radius: 10px;
+  }
 }
 
 /* ====================================================

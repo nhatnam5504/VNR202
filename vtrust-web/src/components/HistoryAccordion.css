@@ -64,5 +64,36 @@
 @media (max-width: 992px) {
   .history-container {
     flex-direction: column;
+    gap: 40px;
+  }
+  .history-desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .history-title {
+    font-size: 2.2rem;
+  }
+  .history-desc {
+    font-size: 1rem;
+  }
+  .accordion-header h3 {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .history-title {
+    font-size: 1.8rem;
+  }
+  .accordion-item {
+    padding: 14px 0;
+  }
+  .accordion-header h3 {
+    font-size: 0.95rem;
+  }
+  .accordion-content p {
+    font-size: 0.88rem;
   }
 }

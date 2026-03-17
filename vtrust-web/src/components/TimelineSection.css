@@ -77,3 +77,67 @@
   line-height: 1.7;
   color: var(--text-dark);
 }
+
+@media (max-width: 992px) {
+  .timeline-cards {
+    flex-wrap: wrap;
+  }
+  .timeline-card {
+    min-width: calc(50% - 12px);
+    flex: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-section {
+    border-radius: 20px 20px 0 0;
+  }
+  .timeline-title {
+    font-size: 1.8rem;
+  }
+  .timeline-cards {
+    flex-direction: column;
+  }
+  .timeline-card {
+    min-width: unset;
+    flex: 1;
+    min-height: auto;
+  }
+  .tabs {
+    gap: 8px;
+  }
+  .tab-btn {
+    padding: 8px 18px;
+    font-size: 0.82rem;
+  }
+  .timeline-content h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-title {
+    font-size: 1.5rem;
+  }
+  .timeline-card {
+    padding: 20px;
+    border-radius: 14px;
+  }
+  .tab-btn {
+    padding: 7px 14px;
+    font-size: 0.78rem;
+  }
+  .timeline-year {
+    font-size: 1rem;
+  }
+  .timeline-year .line {
+    width: 30px;
+  }
+  .timeline-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .timeline-content p {
+    font-size: 0.92rem;
+  }
+}
