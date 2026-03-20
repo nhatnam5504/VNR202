@@ -193,7 +193,7 @@ const PollSection = () => {
           <div className="poll-results-panel">
             <h4 className="poll-results-title">Kết quả yêu thích hiện tại</h4>
             <p className="poll-results-meta">
-              Tổng lượt vote mô phỏng: <strong>{totalVotes}</strong> | Tăng dần từ 5 đến 25 và đồng bộ sau mỗi 2 phút trên mọi máy.
+              Tổng lượt vote mô phỏng: <strong>{totalVotes}</strong> | 
             </p>
 
             <div className="poll-results-list">
