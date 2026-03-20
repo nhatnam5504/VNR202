@@ -21,7 +21,8 @@ const Hero = () => {
         </h2>
         <p className="hero-desc">
           Khi nhắc đến hàng Việt, nhiều người thường chỉ nghĩ đến một lựa chọn tiêu dùng. Nhưng phía sau mỗi đôi giày, chiếc áo hay chiếc xe mang thương hiệu Việt lại là cả một hành trình dài của đổi mới, cạnh tranh và khẳng định vị thế.<br/><br/>
-          V-TRUST là một E-Magazine tương tác tái hiện hành trình phát triển của các thương hiệu nội địa dưới góc nhìn của Gen Z. Dự án không chỉ kể câu chuyện thành công của doanh nghiệp, mà còn làm rõ cách công cuộc Đổi mới từ năm 1986 đã tạo ra môi trường để doanh nghiệp Việt phát triển, nâng cao năng lực cạnh tranh và từng bước hội nhập với thế giới.
+          V-TRUST là một E-Magazine tương tác tái hiện hành trình phát triển của các thương hiệu nội địa dưới góc nhìn của Gen Z. Dự án không chỉ kể câu chuyện thành công của doanh nghiệp, mà còn làm rõ cách
+          <span id="quiz-focus-doimoi-1986"> công cuộc Đổi mới từ năm 1986 đã tạo ra môi trường để doanh nghiệp Việt phát triển, nâng cao năng lực cạnh tranh và từng bước hội nhập với thế giới.</span>
         </p>
         
         <div className="hero-actions flex items-center gap-8 mt-8">
@@ -44,8 +45,8 @@ const Hero = () => {
       <div className="hero-stats flex-col gap-4">
         <div ref={tilt1.ref} onMouseMove={tilt1.onMouseMove} onMouseLeave={tilt1.onMouseLeave}
           className="stat-card card-yellow hover-scale tilt-card animate-pulse-yellow reveal-child stagger-1"
-          data-bg="35">
-          <div className="stat-big-num"><CountUp end={35} /></div>
+          data-bg="40">
+          <div className="stat-big-num"><CountUp end={40} /></div>
           <div className="stat-label-row">
             <span className="stat-label-unit">NĂM</span>
             <span className="stat-label-tag">ĐỔI MỚI</span>

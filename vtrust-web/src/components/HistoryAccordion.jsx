@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import './HistoryAccordion.css';
 
 const HistoryAccordion = () => {
   const [activeItem, setActiveItem] = useState(0);
   const { ref: revealRef, isVisible } = useScrollReveal();
+
+  useEffect(() => {
+    const onQuizOpenAccordion = (event) => {
+      const index = event?.detail?.index;
+      if (typeof index !== 'number') return;
+      setActiveItem(index);
+    };
+
+    window.addEventListener('quiz-open-accordion', onQuizOpenAccordion);
+    return () => {
+      window.removeEventListener('quiz-open-accordion', onQuizOpenAccordion);
+    };
+  }, []);
 
   const accordionData = [
     {
@@ -59,7 +72,16 @@ const HistoryAccordion = () => {
                 </div>
                 {activeItem === index && (
                   <div className="accordion-content">
-                    <p style={{ whiteSpace: 'pre-line' }}>{item.content}</p>
+                    {index === 1 ? (
+                      <p style={{ whiteSpace: 'pre-line' }}>
+                        <span id="quiz-focus-hangviet-2009">
+                          Cuộc vận động “Người Việt Nam ưu tiên dùng hàng Việt Nam” không chỉ khuyến khích tiêu dùng nội địa, mà còn góp phần thay đổi nhận thức xã hội về chất lượng và vị trí của hàng Việt.
+                        </span>{' '}
+                        Trong bối cảnh thương hiệu ngoại chiếm ưu thế mạnh mẽ, đây là một cú hích quan trọng để doanh nghiệp Việt mạnh dạn đầu tư hơn vào sản phẩm, thương hiệu và niềm tin người dùng.
+                      </p>
+                    ) : (
+                      <p style={{ whiteSpace: 'pre-line' }}>{item.content}</p>
+                    )}
                   </div>
                 )}
               </div>

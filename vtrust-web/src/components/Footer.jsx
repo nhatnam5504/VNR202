@@ -26,10 +26,10 @@ const Footer = () => {
               <li>Ý nghĩa hiện đại của tinh thần “Người Việt Nam ưu tiên dùng hàng Việt Nam”</li>
             </ul>
             
-            <h3 className="mt-8 mb-4">Danh sách NHÓM 2</h3>
-            <p className="team-member">HOÀNG NGHĨA - SE182826</p>
-            <p className="team-member">TÂM</p>
-            <p className="team-member">...</p>
+            <h3 className="mt-8 mb-4">Nhóm thực hiện</h3>
+            <div className="team-badge-wrap">
+              <span className="team-badge">Nhóm 2</span>
+            </div>
           </div>
 
           <div className="footer-refs">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { useMouseTilt } from '../hooks/useMouseTilt';
 import './TimelineSection.css';
@@ -71,6 +71,19 @@ const TimelineSection = () => {
   const [activeTab, setActiveTab] = useState('chung');
   const { ref: revealRef, isVisible } = useScrollReveal();
 
+  useEffect(() => {
+    const onQuizOpenTab = (event) => {
+      const tabKey = event?.detail?.tabKey;
+      if (!tabKey || !tabsData[tabKey]) return;
+      setActiveTab(tabKey);
+    };
+
+    window.addEventListener('quiz-open-tab', onQuizOpenTab);
+    return () => {
+      window.removeEventListener('quiz-open-tab', onQuizOpenTab);
+    };
+  }, []);
+
   const data = tabsData[activeTab];
 
   // One tilt per card slot (max 3 cards)
@@ -100,6 +113,7 @@ const TimelineSection = () => {
             {data.cards.map((card, idx) => (
               <div
                 key={idx}
+                id={activeTab === 'vinfast' && card.year === 'Năm 2021' ? 'quiz-focus-vinfast-2021' : undefined}
                 ref={tilts[idx]?.ref}
                 onMouseMove={tilts[idx]?.onMouseMove}
                 onMouseLeave={tilts[idx]?.onMouseLeave}

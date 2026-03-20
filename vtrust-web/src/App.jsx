@@ -10,10 +10,12 @@ import Footer from './components/Footer';
 import ProgressBar from './components/ProgressBar';
 import FactsTicker from './components/FactsTicker';
 import SectionNavDots from './components/SectionNavDots';
+import ScrollQuizGate from './components/ScrollQuizGate';
 
 function App() {
   return (
     <div className="app-container">
+      <ScrollQuizGate />
       <ProgressBar />
       <SectionNavDots />
       <Header />
