@@ -141,7 +141,7 @@ const PollSection = () => {
   return (
     <section ref={revealRef} className={`poll-section container py-20 flex flex-col items-center reveal ${isVisible ? 'is-visible' : ''}`} id="binhchon">
       <div className="poll-header flex justify-between items-center mb-10">
-        <h2 className="poll-title font-serif">
+        <h2 className="poll-title font-serif" id="quiz-focus-checkvar-title">
           <span className="text-red">TRẠM "CHECK-VAR":</span><br /> GEN Z CHỌN GÌ?
         </h2>
         <div className="poll-subtitle flex-col gap-4">

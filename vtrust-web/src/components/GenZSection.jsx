@@ -11,7 +11,7 @@ const GenZSection = () => {
   return (
     <section ref={revealRef} className={`genz-section container py-20 reveal ${isVisible ? 'is-visible' : ''}`}>
 
-      <p className="section-tldr">
+      <p className="section-tldr" id="quiz-focus-genz-quality-title">
         Gen Z không từ chối hàng Việt — họ chỉ cần <span className="highlight-word">chất lượng thật</span>.
       </p>
 

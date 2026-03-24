@@ -57,12 +57,14 @@ const Hero = () => {
         <div ref={tilt2.ref} onMouseMove={tilt2.onMouseMove} onMouseLeave={tilt2.onMouseLeave}
           className="stat-card card-yellow top-right hover-scale tilt-card animate-pulse-yellow reveal-child stagger-2"
           data-bg="09">
-          <div className="stat-big-num" style={{ fontSize: '3.8rem', letterSpacing: '-2px' }}>20<span className="stat-big-accent">09</span></div>
-          <div className="stat-label-row">
-            <span className="stat-label-unit">NĂM</span>
-            <span className="stat-label-tag">CHIẾN LƯỢC</span>
+          <div id="quiz-focus-hero-2009-strategy">
+            <div className="stat-big-num" style={{ fontSize: '3.8rem', letterSpacing: '-2px' }}>20<span className="stat-big-accent">09</span></div>
+            <div className="stat-label-row">
+              <span className="stat-label-unit">NĂM</span>
+              <span className="stat-label-tag">CHIẾN LƯỢC</span>
+            </div>
+            <p>Bộ Chính trị phát động <span className="hl-red">"Người Việt Nam ưu tiên dùng hàng Việt Nam"</span> — tiếp thêm niềm tin cho Local Brand.</p>
           </div>
-          <p>Bộ Chính trị phát động <span className="hl-red">"Người Việt Nam ưu tiên dùng hàng Việt Nam"</span> — tiếp thêm niềm tin cho Local Brand.</p>
           <div className="stat-line"></div>
         </div>
         <div ref={tilt3.ref} onMouseMove={tilt3.onMouseMove} onMouseLeave={tilt3.onMouseLeave}

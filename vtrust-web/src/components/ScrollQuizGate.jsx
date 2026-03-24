@@ -5,59 +5,59 @@ const quizSteps = [
   {
     triggerId: 'thuonghieu',
     readId: 'hero-top',
-    focusTargetId: 'quiz-focus-doimoi-1986',
+    focusTargetId: 'quiz-focus-hero-2009-strategy',
     readLabel: 'Mở đầu V-TRUST',
-    question: 'Theo nội dung mở đầu, công cuộc Đổi mới được khởi xướng từ mốc nào?',
+    question: 'Để mở khóa hành trình khám phá Gen Z, hãy cho biết một sự kiện quan trọng nào vào Năm 2009 đã tạo thêm niềm tin chiến lược cho các Local Brand Việt?',
     options: [
-      { label: 'Năm 1975', correct: false },
-      { label: 'Năm 1986', correct: true },
-      { label: 'Năm 1995', correct: false },
-      { label: 'Năm 2009', correct: false }
+      { label: 'A. Đại hội đại biểu toàn quốc lần thứ VI được tổ chức.', correct: false },
+      { label: 'B. Bộ Chính trị phát động cuộc vận động "Người Việt Nam ưu tiên dùng hàng Việt Nam".', correct: true },
+      { label: 'C. Việt Nam chính thức gia nhập Tổ chức Thương mại Thế giới (WTO).', correct: false },
+      { label: 'D. VinFast xuất khẩu chiếc ô tô điện đầu tiên sang thị trường Mỹ.', correct: false }
     ],
-    hint: 'Gợi ý: đọc lại phần mở đầu và thẻ số liệu “35 năm Đổi mới”.'
+    hint: 'Gợi ý: xem lại thẻ vàng “NĂM 2009 | CHIẾN LƯỢC” ở Hero Banner.'
   },
   {
     triggerId: 'boicanh',
-    readId: 'thuonghieu',
-    activateTab: 'vinfast',
-    focusTargetId: 'quiz-focus-vinfast-2021',
-    readLabel: 'Tự hào Local Brand',
-    question: 'Trong case VinFast, bước ngoặt chiến lược năm 2021 là gì?',
+    readId: 'genz',
+    focusTargetId: 'quiz-focus-genz-quality-title',
+    readLabel: 'Gen Z đang tiêu dùng thế nào?',
+    question: 'Theo phân tích của V-TRUST, Gen Z không hề từ chối hàng Việt. Vậy prerequisites (điều kiện tiên quyết) nào mà một Local Brand cần đáp ứng để thuyết phục họ "chốt đơn" giữa cơn bão hàng ngoại giá rẻ?',
     options: [
-      { label: 'Mở chuỗi cửa hàng thời trang', correct: false },
-      { label: 'Chuyển hướng 100% sang xe điện', correct: true },
-      { label: 'Ngừng mở rộng thị trường', correct: false },
-      { label: 'Chỉ tập trung gia công', correct: false }
+      { label: 'A. Giá cả phải là rẻ nhất trên thị trường.', correct: false },
+      { label: 'B. Chạy quảng cáo liên tục với các KOL/KOC nổi tiếng.', correct: false },
+      { label: 'C. Tập trung vào "Chất lượng thật", thẩm mỹ cao và câu chuyện thương hiệu chân thật.', correct: true },
+      { label: 'D. Chỉ bán các sản phẩm mang phong cách hoài cổ.', correct: false }
     ],
-    hint: 'Gợi ý: xem lại tab VinFast ở phần thương hiệu.'
+    hint: 'Gợi ý: đọc lại phần “Gen Z không từ chối hàng Việt — họ chỉ cần chất lượng thật.”'
   },
   {
     triggerId: 'gocnhin',
-    readId: 'gocnhin',
-    openAccordionIndex: 1,
-    focusTargetId: 'quiz-focus-hangviet-2009',
-    readLabel: 'Bệ phóng lịch sử',
-    question: 'Cuộc vận động “Người Việt Nam ưu tiên dùng hàng Việt Nam” được nhắc ở mốc nào?',
+    readId: 'thuonghieu',
+    activateTab: 'chung',
+    focusTargetId: 'quiz-focus-common-goals-block',
+    readLabel: 'Mục tiêu chung',
+    question: 'V-TRUST xác định 3 trụ cột lớn để doanh nghiệp Việt vươn lên trong nền kinh tế thị trường. "Học hỏi chuẩn mực quốc tế nhưng vẫn giữ được bản sắc Việt" thuộc trụ cột nào dưới đây?',
     options: [
-      { label: '1986', correct: false },
-      { label: '2009', correct: true },
-      { label: '2017', correct: false },
-      { label: '2023', correct: false }
+      { label: 'A. Trụ cột 1: Tự chủ cạnh tranh.', correct: false },
+      { label: 'B. Trụ cột 2: Đổi mới để tồn tại.', correct: false },
+      { label: 'C. Trụ cột 3: Hội nhập không hòa tan.', correct: true },
+      { label: 'D. Trụ cột 4: Phát triển bền vững.', correct: false }
     ],
-    hint: 'Gợi ý: mở mục “Năm 2009 — Đánh thức Niềm tin”.'
+    hint: 'Gợi ý: xem lại phần “MỤC TIÊU CHUNG” và 3 trụ cột trong section Tự hào Local Brand.'
   },
   {
     triggerId: 'binhchon',
     readId: 'binhchon',
-    readLabel: 'Trạm Check-Var',
-    question: 'Thông điệp trung tâm của trang là gì?',
+    focusTargetId: 'quiz-focus-checkvar-title',
+    readLabel: 'TRẠM "CHECK-VAR": GEN Z CHỌN GÌ?',
+    question: 'Bạn đã hoàn thành hành trình! Câu hỏi cuối cùng: Sự thành công của các Local Brand hiện đại (VinFast, Coolmate...) được V-TRUST đúc kết là "mùa quả ngọt" đến từ sự gặp gỡ của hai yếu tố nào?',
     options: [
-      { label: 'Ưu tiên hàng ngoại để hội nhập nhanh', correct: false },
-      { label: 'Tự hào hàng Việt, đổi mới và tự chủ', correct: true },
-      { label: 'Chỉ quan tâm giá rẻ', correct: false },
-      { label: 'Giảm vai trò doanh nghiệp Việt', correct: false }
+      { label: 'A. Vốn đầu tư nước ngoài dồi dào và thị trường tiêu thụ rộng lớn.', correct: false },
+      { label: 'B. Công nghệ tiên tiến và nguồn nhân lực giá rẻ.', correct: false },
+      { label: 'C. Đường lối kiến tạo đúng đắn của Đảng & Bản lĩnh kiên cường của doanh nghiệp Việt.', correct: true },
+      { label: 'D. Lòng yêu nước của người tiêu dùng và áp lực cạnh tranh toàn cầu.', correct: false }
     ],
-    hint: 'Gợi ý: đọc lại các đoạn kết luận màu đỏ trong các section.'
+    hint: 'Gợi ý: đọc lại phần “TRẠM "CHECK-VAR": GEN Z CHỌN GÌ?” và liên hệ tổng kết về đường lối Đảng cùng nội lực doanh nghiệp Việt.'
   }
 ];
 

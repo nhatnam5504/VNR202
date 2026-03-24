@@ -92,6 +92,7 @@ const TimelineSection = () => {
   return (
     <section ref={revealRef} className={`timeline-section reveal ${isVisible ? 'is-visible' : ''}`} id="thuonghieu">
       <div className="container py-20">
+        <div id="quiz-focus-common-goals-block">
         <h2 className="timeline-title text-center font-serif mb-12">
           <span className="text-red">TỰ HÀO LOCAL BRAND:</span> NHỮNG BƯỚC CHÂN TỰ CHỦ
         </h2>
@@ -157,6 +158,7 @@ const TimelineSection = () => {
               </div>
             )}
           </div>
+        </div>
         </div>
       </div>
     </section>
