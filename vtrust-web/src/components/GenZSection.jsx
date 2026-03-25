@@ -51,7 +51,7 @@ const GenZSection = () => {
 
       <div className={`key-insight yellow-accent ${isVisible ? 'is-visible' : ''}`}>
         <span className="ki-label">⭐ Insight cho Doanh nghiệp Việt</span>
-        Đổi mới không chỉ là tâm lý — đó là điều kiện tồn tại. Local Brand nào thấu hiểu Gen Z, đổi mới sản phẩm và kể câu chuyện đúvng cách — thương hiệu ấy có thể thắng trên chính sân nhà.
+        Đổi mới không chỉ là tâm lý — đó là điều kiện tồn tại. Local Brand nào thấu hiểu Gen Z, đổi mới sản phẩm và kể câu chuyện đúng cách — thương hiệu ấy có thể thắng trên chính sân nhà.
       </div>
 
     </section>
